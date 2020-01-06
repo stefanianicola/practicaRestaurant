@@ -1,0 +1,71 @@
+header {
+    width: 100%;
+    background-image: url(.././img/bg.jpg);
+    background-color: #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    .container{
+        position: relative;
+        height: 700px;
+        @include respond-to(medium){
+            position: static;
+            height: auto;
+        }
+            nav {
+                margin: 40px 20px;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: right;
+                @include respond-to(medium) {
+                    text-align: center;
+                }
+                a {
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, .5);
+                    /*border-bottom: 2px solid transparent;*/
+                    position: relative;
+                    @include respond-to(medium){
+                        margin: 20px 10px;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        /*border-bottom: 2px solid #fff;*/
+                        color: #fff;
+                    }
+                }  
+            }
+            .text-header {
+                width: 100%;
+                /*font-family: 'Raleway', sans-serif;*/
+                color: #fff;
+                /*margin-top: 300px;*/
+                position: absolute;
+                top: 50%;
+                margin-top: -52px;
+                @include respond-to(medium){
+                    position: static;
+                    margin: 100px 0;
+                }
+                .title {
+                    font-size: 50px;
+                    font-weight: 600;
+                    span {
+                        font-weight: 300;
+                    }
+                    @include respond-to(medium){
+                        font-size: 30px;
+                    }
+                }
+                h2 {
+                    font-size: 25px;
+                    font-weight: 300;
+                    font-style: italic;
+                    @include respond-to(medium){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }   
+}
